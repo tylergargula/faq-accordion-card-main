@@ -1,0 +1,177 @@
+body {
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+h1 {
+  color: hsl(237, 12%, 33%);
+  font-weight: 700;
+  padding-left: 0.25rem;
+}
+
+/* Accordion Styles  */
+.accordion-body {
+  color: hsl(240, 6%, 50%);
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+  padding-left: 4px;
+}
+
+.accordion-button {
+  border-right-width: 0;
+  border-left-width: 0;
+  color: hsl(240, 6%, 50%);
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  padding-left: 0.25rem;
+}
+
+.accordion-button::after {
+  background-image: url('images/icon-arrow-down.svg');
+  background-size: 1rem;
+}
+
+.accordion-button:focus{
+   outline: none !important;
+   box-shadow: none;
+   border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('images/icon-arrow-down.svg');
+  background-size: 1rem;
+}
+
+.accordion-collapse {
+  border-right-width: 0;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-bottom-width: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  color: hsl(237, 12%, 33%);
+  background-color: rgb(255, 255, 255, 0.0);
+}
+
+.box-layer {
+  background-color: #FFFFFF;
+  border-radius: 35px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 4% 0 8% 0;
+  background-image: url('images/bg-pattern-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: -545px -250px;
+}
+
+
+
+button:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+.column-one {
+  background-image: url('images/illustration-woman-online-desktop.svg');
+  background-repeat: no-repeat;
+  background-position: -75px 63px;
+}
+
+.column-two {
+  padding-top: 7%;
+  padding-bottom: 2%;
+  padding-right: 7%;
+  padding-left: 5%;
+}
+
+.container-fluid {
+  padding: 8% 10%;
+}
+
+.click-button {
+  font-weight: 700;
+}
+
+.cube-img {
+  position: relative;
+  right: 102px;
+  top: 196px;
+}
+
+.first-button {
+  border-top-width: 0;
+}
+
+.row {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 1166px) {
+  img:first-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .accordion-button {
+    font-size: 14px;
+  }
+
+  .accordion-button::after {
+    background-size: 1rem;
+    position: relative;
+    left: 22px;
+  }
+
+  .accordion-body {
+    font-size: 14px;
+  }
+
+  img:nth-child(2) {
+    display: none;
+  }
+
+  .box-layer {
+    background-image: url('images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
+  .column-one {
+    position: absolute;
+    bottom: 48%;
+    background-image: none;
+    padding-bottom: 10px;
+    font-size: 13px;
+  }
+
+  .column-two {
+    width: 350px;
+  }
+
+  .container-fluid {
+    width: 350px;
+    height: 550px;
+    padding: .2rem;
+    position: relative;
+    margin-top: 170px;
+    margin-bottom: 170px;
+  }
+
+  .row {
+    padding-top: 100px;
+    padding-bottom: 20px;
+  }
+
+  .woman-online-mobile {
+    position: relative;
+    bottom: 180px;
+    left: 10px;
+  }
+}
